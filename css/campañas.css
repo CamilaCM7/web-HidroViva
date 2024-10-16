@@ -1,3 +1,87 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.presentacion {
+    width:800px;              
+    height: 200px;              
+    padding: 10px;              
+    margin: 0 auto;             
+         
+    justify-content: center;
+    
+    border-radius: 10px;
+    border-right: 2px solid #c0c0c0;
+    border-bottom: 2px solid #c0c0c0;    
+ 
+}
+
+.grid-contenedor {
+    margin: 20px;
+    display: grid;               
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;                   
+    max-width: 800px;             
+    margin: 0 auto; 
+                 
+}
+
+.caja {
+    margin: 20px;
+    border-right: 2px solid #c0c0c0;
+    border-bottom: 2px solid #c0c0c0; 
+    height: 400px;                 
+    background-color: #b9f1ff;     
+    display: flex;                
+    justify-content: center;       
+    align-items: center;           
+    border-radius: 40px;           
+}
+
+#rios{
+    background-image: url(../images/c_rios.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+#rios:hover{
+    transform: scale(1.1);
+}
+
+#montañas{
+    background-image: url(../images/c_montañas.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    object-fit: cover;
+}
+#montañas:hover{
+    transform: scale(1.1);
+}
+
+#con{
+    background-image: url(../images/c_con.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    object-fit: cover;
+}
+#con:hover{
+    transform: scale(1.1);
+}
+
+#planta{
+    background-image: url(../images/c_plantar.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    object-fit: cover;
+}
+#planta:hover{
+    transform: scale(1.1);
 }
