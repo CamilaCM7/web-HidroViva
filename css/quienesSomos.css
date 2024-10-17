@@ -93,8 +93,10 @@ header {
 }
 
 .slide-active {
-
-
+    width: 100%;
+    height: 100%;
+}
+.slide-active img {
     width: 100%;
     height: 100%;
 }
@@ -118,10 +120,24 @@ h1{
 button {
     font-size: 40px;
     padding: 10px;
+    background-color: #f3f3f5;
+    font-family: Georgia;
+    color: #2a067f;
+    cursor: pointer;
+    transition: all 0.9s ease; /* trancision al pasar el mouse*/
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+  
+  }
+  
+  button:hover {
+    font-size: 40px;
+    padding: 10px;
     background-color: #0b1a64;
-    font-family: Arial;
+    font-family: Georgia;
     color: #f3f3f3;
-}
+    transform: scale(1.1); /* ligero aumento del tamaño del boton al pasar el mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
+  }
 /*MAIN*/
 h2 {
     font-size: 40px;
@@ -136,6 +152,7 @@ h2 {
 .mision-vision{
         display: flex;
         justify-content: space-between; /* Distribuye los elementos uniformemente */
+        border: #000000 solid 1px;
 
 }
 
@@ -145,6 +162,7 @@ h2 {
     margin-left: 10rem;
     height: 40rem;
     width: 40rem;
+    border: #000000 solid 1px;
 
 
 }
@@ -153,6 +171,10 @@ h2 {
     margin-right: 10rem;
     height: 40rem;
     width: 40rem;
+    border: #000000 solid 1px;
+}
+#factor-diferencial {
+    text-align: center;
 }
 /* Estilos del footer */
 footer {
@@ -176,7 +198,7 @@ footer {
 .nav-links h2 {
     margin-bottom: 10px;
     font-size: 20px;
-    color: #f2f2f2; /* Color más claro para los títulos */
+    color: #0c104f; /* Color más claro para los títulos */
 }
 
 .location {
