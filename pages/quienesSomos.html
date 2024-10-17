@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quienes somos?</title>
-    <link rel="stylesheet" href="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Fundación HidroViva</title>
     <link rel="stylesheet" href="/css/quienesSomos.css">
 </head>
+
 <body>
-    <H1>De Andres Uyazan</H1>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo Fundación HidroViva">
+        </div>
+        <div>
+            <button id="abrir-menu"><i class="bi bi-list"></i></button>
+        </div>
+        <nav class="nav" id="nav">
+            <button id="cerrar-menu"><i class="bi bi-x-circle"></i></button>
+            <ul class="nav-list">
+                <li><a href="/pages/quienesSomos.html">¿Quienes somos?</a></li>
+                <li><a href="/pages/Proyectos.html">Proyectos</a></li>
+                <li><a href="/pages/Biodiversidad.html">Biodiversidad</a></li>
+                <li><a href="/pages/campañas.html">Campañas</a></li>
+                <li><a href="/pages/donar.html">Donación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slide-active">
+                <img src="/images/imagen6.jpg" alt="Imagen 1">
+                <div id="text-overlay">
+                    <h1><strong>¿Quienes somos?</strong></h1>
+                    <p>Protegiendo el agua para garantizar un futuro sostenible</p>
+                    <br><button>Donar</button></br>
+                </div>
+            </div>
+            <!-- Puedes agregar más imágenes aquí -->
+        </div>
+
+        <section id="nuestra-historia">
+            <h2>Nuestra historia</h2>
+            <br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nam eos, libero ratione dignissimos itaque dolorem cumque aliquid qui consequatur omnis corporis doloremque error, dicta explicabo quibusdam molestias? Et, quo?</p></br>
+        </section>
+
+        <div class="mision-vision">
+            <section id="mision">
+                <h2>Mision</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora, earum illum porro culpa qui dignissimos ratione et laudantium excepturi officia deserunt quasi accusamus, sed aut repellendus saepe animi officiis?</p>
+
+            </section>
+            <section id="vision">
+                <h2>Vision</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus ad accusamus, reprehenderit quam dolorum eum harum hic sapiente quidem dignissimos nulla, adipisci rem similique. Harum, perferendis. Ad, sint dicta?</p>
+
+            </section>
+
+        </div>
+  
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="locations">
+                <h2>Sedes de la Fundación</h2>
+                <div class="location">
+                    <h3>Sede Principal</h3>
+                    <p>Dirección: Calle 123 #45-67</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Email: contacto@hidroviva.org</p>
+                </div>
+                <div class="location">
+                    <h3>Sede Norte</h3>
+                    <p>Dirección: Av. Norte #89-12</p>
+                    <p>Teléfono: (098) 765-4321</p>
+                    <p>Email: norte@hidroviva.org</p>
+                </div>
+                <div class="location">
+                    <h3>Sede Sur</h3>
+                    <p>Dirección: Carrera 5 #67-89</p>
+                    <p>Teléfono: (456) 123-7890</p>
+                    <p>Email: sur@hidroviva.org</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <h2>Enlaces Principales</h2>
+                <ul>
+                    <li><a href="/pages/quienesSomos.html">¿Quienes somos?</a></li>
+                    <li><a href="/pages/Proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/Biodiversidad.html">Biodiversidad</a></li>
+                    <li><a href="/pages/campañas.html">Campañas</a></li>
+                    <li><a href="/pages/donar.html">Donación</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HidroViva. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     
+
+    <script src="/js/script-index.js"></script>
 </body>
 </html>
