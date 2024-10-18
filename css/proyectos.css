@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal usando grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-rows: auto auto 1fr auto; /* Filas: header, nav, main y footer */
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  position: relative;
+  background: url("/images/proyectos-img/SanJeronimo2_241015Edge.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Panel de navegación sobre el header */
+nav {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Título central en el header */
+.header-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-gap: 10px;
+}
+
+/* Título Río Aurra */
+.main-title {
+  grid-column: span 3;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+main div {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #6B8E23;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Imagenes y texto en el main */
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para los patrocinadores */
+.patrocinadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.patrocinadores img {
+  margin: 0 10px;
+  width: 100px;
+  height: auto;
+}
