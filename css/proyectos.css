@@ -98,6 +98,12 @@ img, p {
   margin: 0; /* Elimina márgenes alrededor */
 }
 
+/* Imagenes y texto en el main */
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   grid-area: footer;
   display: grid;
@@ -105,9 +111,16 @@ footer {
   grid-template-rows: auto auto; /* Dos filas automáticas */
   gap: 10px; /* Espaciado entre los elementos */
   background-color: #567b25; /* Color verde de fondo */
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
   color: #000; /* Color del texto */
+  font-size: 0.6rem;
   text-align: center;
+  margin: 0px 15px 10px 15px;
+}
+
+footer div {
+  margin: 0px;
+  padding: 0px;
 }
 
 footer h3 {
@@ -117,24 +130,25 @@ footer h3 {
 .redes-sociales,
 .contacto,
 .videos-podcast {
-  padding: 10px;
+  padding: 5px;
 }
 
 .redes-sociales .redes div,
 .videos-podcast .videos div {
   display: flex; /* Usamos flexbox para alinear los íconos y textos en una fila */
   align-items: center; /* Alinea verticalmente los íconos con el texto */
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .redes-sociales .redes img,
 .videos-podcast .videos img {
-  width: 30px; /* Ajusta el tamaño de los íconos */
+  width: 2vw; /* Ajusta el tamaño de los íconos */
   margin-right: 10px; /* Añade espacio entre el ícono y el texto */
 }
 
 .contacto ul {
   list-style: none;
+  text-align: left;
   padding: 0;
 }
 
@@ -153,10 +167,10 @@ footer h3 {
 .patrocinadores div {
   display: flex; /* Usamos flexbox para alinear los logos y textos en una fila */
   align-items: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .patrocinadores img {
-  width: 60px; /* Ajusta el tamaño de los logos de patrocinadores */
+  width: 3vw; /* Ajusta el tamaño de los logos de patrocinadores */
   margin-right: 10px; /* Añade espacio entre el logo y el texto */
 }
