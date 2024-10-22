@@ -30,8 +30,8 @@ header {
 
 .logo {
     position: relative;
-    width: 100%;
-    height: 150px;  
+    width: 200px;
+    height: 50px;  
     top: 50px;
     left: 50px;
     z-index: 20;
@@ -136,9 +136,9 @@ header {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     z-index: 5;
 }
-            /*MAIN*/
+/*MAIN*/
 
-            /*ODS*/
+/*ODS*/
 .container-ODS{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
@@ -256,31 +256,25 @@ header {
     margin: 20px 0;
 }
 
-.social-media h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
 .social-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-around;
 }
 
 .social-icons a {
-    margin: 0 15px; /* Espacio entre los iconos */
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Para quitar subrayado de los enlaces */
+    color: inherit; /* Mantiene el color original */
+    margin: 10px; /* Espacio entre los íconos */
+    font-size: 14px; /* Tamaño del texto debajo del ícono */
 }
 
-.social-icons img {
-    width: 40px; /* Ajusta el tamaño de los iconos */
-    height: auto;
-    transition: transform 0.3s; /* Efecto al pasar el cursor */
-}
-
-.social-icons img:hover {
-    transform: scale(1.1); /* Efecto de aumento al pasar el cursor */
+.social-icons i {
+    font-size: 24px; /* Ajusta el tamaño del ícono */
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+    display: block; /* Asegura que el ícono esté separado del texto */
 }
 
 .logo {
