@@ -1,87 +1,166 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 20px;
 
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Britannic Bold', Arial, sans-serif;
+}
 
-.presentacion {
-    width:800px;              
-    height: 200px;              
-    padding: 10px;              
-    margin: 0 auto;             
-         
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.otro{
+
+    background-color: lightblue; /* Color de fondo */
+    border: 2px solid blue; /* Borde opcional */
+    padding: 0;          /* Espaciado interno */
+    text-align: center;     /* Alinear texto al centro */
+}
+
+.contenedor{
+    display: flex;
+}
+
+.frase{
+    height: 400px;
+    width: 50%;
+    padding: 10px;          /* Espaciado interno */
+    background-color: #fffdef; /* Color de fondo */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imagen{
+    height: 400px;
+    width: 50%;
+    margin-top: 30px;
+    margin-right: 60px;
+    background-image: linear-gradient(to right, rgba(170, 170, 170, 0.5), rgba(170, 170, 170, 0)), url(../images/voluntariado.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.cartero{
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    
-    border-radius: 10px;
-    border-right: 2px solid #c0c0c0;
-    border-bottom: 2px solid #c0c0c0;    
- 
+    height: 1200px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
+#montaña{
+    height: 45%;
+    width: 45%;
+    border-radius: 40px; 
 
-.grid-contenedor {
-    margin: 20px;
-    display: grid;               
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px;                   
-    max-width: 800px;             
-    margin: 0 auto; 
-                 
-}
-
-.caja {
-    margin: 20px;
-    border-right: 2px solid #c0c0c0;
-    border-bottom: 2px solid #c0c0c0; 
-    height: 400px;                 
-    background-color: #b9f1ff;     
-    display: flex;                
-    justify-content: center;       
-    align-items: center;           
-    border-radius: 40px;           
-}
-
-#rios{
-    background-image: url(../images/c_rios.jpg);
-    background-position: center;
-    background-size: cover;
-    transition: 0.5s;
-    object-fit: cover;
-}
-
-#rios:hover{
-    transform: scale(1.1);
-}
-
-#montañas{
     background-image: url(../images/c_montañas.jpg);
-    background-size: cover;
     background-position: center;
-    transition: 0.5s;
+    background-size: cover;
+
+
+    transition: 0.2s;
     object-fit: cover;
+
+    margin: 0;
 }
-#montañas:hover{
+
+#montaña:hover{
     transform: scale(1.1);
+    background-image: none;
+    background-color: #8eaa46;
+}
+.oculto{
+    height: 95%;
+    width: 95%;
+    padding: 20px 5% 5px 5%;
+
+    text-align: center;
+
+    margin: 0;
+    opacity: 0;
+
+    overflow: hidden;
+}
+.oculto:hover{
+    opacity: 0.7;
+}
+
+
+#arboles{
+    height: 45%;
+    width: 45%;
+    padding: 5px;
+    border-radius: 40px; 
+
+    background-image: url(../images/c_plantar.jpg);
+    background-position: center;
+    background-size: cover;
+
+    transition: 0.2s;
+    object-fit: cover;
+
+    border: 2px solid #ccc; /* Borde opcional */  
+}
+
+#arboles:hover{
+    transform: scale(1.1);
+    background-image: none;
+    background-color: #8eaa46;
 }
 
 #con{
+   
+    height: 45%;
+    width: 45%;
+    
+    padding: 5px;
+    border-radius: 40px; 
+
     background-image: url(../images/c_con.jpg);
-    background-size: cover;
     background-position: center;
-    transition: 0.5s;
+    background-size: cover;
+
+    transition: 0.2s;
     object-fit: cover;
-}
-#con:hover{
-    transform: scale(1.1);
+
+    border: 2px solid #ccc; /* Borde opcional */   
 }
 
-#planta{
-    background-image: url(../images/c_plantar.jpg);
-    background-size: cover;
-    background-position: center;
-    transition: 0.5s;
-    object-fit: cover;
-}
-#planta:hover{
+#con:hover{
     transform: scale(1.1);
+    background-image: none;
+    background-color: #8eaa46;
+}
+
+#rio{
+    height: 45%;
+    width: 45%;
+    padding: 5px;
+    border-radius: 40px; 
+
+    background-image: url(../images/c_rios.jpg);
+    background-position: center;
+    background-size: cover;
+
+    transition: 0.2s;
+    object-fit: cover;
+
+    border: 2px solid #ccc; /* Borde opcional */  
+}
+
+#rio:hover{
+    transform: scale(1.1);
+    background-image: none;
+    background-color: #8eaa46;
+}
+
+.datos{
+    background-color: lightblue; /* Color de fondo */
+    border: 2px solid blue; /* Borde opcional */
+    padding: 0;          /* Espaciado interno */
+    text-align: center;     /* Alinear texto al centro */
 }
