@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/css/styles-index.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="/images/logo.png" alt="Logo Fundación HidroViva">
+            <img src="/images/home/logo_FINAL-03.png" alt="Logo Fundación HidroViva" class="imagenLogo">
         </div>
         <div>
             <button id="abrir-menu"><i class="bi bi-list"></i></button>
@@ -27,10 +27,11 @@
             </ul>
         </nav>
     </header>
+    
 
     <div class="slider">
         <div class="slide active">
-            <img src="/images/imagen5.jpg" alt="Imagen 1">
+            <img src="/images/home/Slider2.jpg" alt="Imagen 1">
             <div class="text-overlay">
                 <h2>Conservando el agua</h2>
                 <p>Preservando la vida</p>
@@ -43,22 +44,34 @@
         <section class ="ODS">
             <h2>Nuestro compromiso con los ODS</h2>
             <p>En Fundación HidroViva trabajamos por un futuro sostenible alineado con los Objetivos de Desarrollo Sostenible (ODS):</p>
-            <div class="ODS-image">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
+            <div class="container-ODS">
+                <img src="/images/home/ODS06.jpg" alt="ODS 6">
+                <img src="/images/home/ODS7.jpg" alt="ODS 7">
+                <img src="/images/home/ODS13.jpg" alt="ODS 13">
+                <img src="/images/home/ODS15.jpg" alt="ODS 15">
             </div>
             <p>Promovemos la conservación, la investigación y la educación para proteger el patrimonio hídrico de Antioquia.</p>
         </section>
-        <section class ="proyectos">
-            <h2>Proyectos destacados</h2>
+        <section>
+            <h2>Destacados</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aperiam consectetur sunt odio laudantium saepe inventore, nobis blanditiis nihil ipsum nemo dolores adipisci, voluptatem illum maxime minus fugit corrupti? Beatae.</p>
-            <div class="ODS-image">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
-                <img src="/images/imagen5.jpg" alt="Imagen 1">
+            <div class="container-destacado">
+                <div class="destacado">
+                    <img src="/images/home/Destacado3.webp" alt="Proyectos">
+                    <div class="text-destacado">PROYECTOS</div>
+                </div>
+                <div class="destacado">
+                    <img src="/images/home/Destacado2.png" alt="Proyectos">
+                    <div class="text-destacado">BIODIVERSIDAD</div>
+                </div>
+                <div class="destacado">
+                    <img src="/images/home/Destacado3.webp" alt="Proyectos">
+                    <div class="text-destacado">ADOPTA UNA RÍO</div>
+                </div>
+                <div class="destacado">
+                    <img src="/images/home/Destacado3.webp" alt="Proyectos">
+                    <div class="text-destacado">DONA POR EL AGUA</div>
+                </div>
             </div>
             <p>Promovemos la conservación, la investigación y la educación para proteger el patrimonio hídrico de Antioquia.</p>
         </section>
@@ -70,6 +83,15 @@
         
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="email">¿Qué te describe mejor?</label>
+                <input type="radio" class="describe" value="1">Soy estudiante
+                <input type="radio" class="describe" value="1">Me interesa conservar el medio ambiente
+                <input type="radio" class="describe" value="1">Me interesa la política ambiental
+                <input type="radio" class="describe" value="1">Me interesa donar
+                <input type="radio" class="describe" value="1">Estoy explorando
+                <br>
+                <input type="checkbox" class="acepto-terminos-condiciones" value="1">Acepto recibir otras comunicaciones de FUNDACIÓN HIDROVIVA y la Política de privacidad para que FUNDACIÓN HIDROVIDA te proporcione el contenido solicitado.
         
                 <button type="submit">Suscribirse</button>
             </form>

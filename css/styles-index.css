@@ -16,25 +16,40 @@ body {
 
 /*HEADER*/
 header {
-    position: fixed;
-    top: 0;
+    position: fixed; 
     width: 100%;
+    height: 75px; /* Ajustamos la altura del header */
     display: flex;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
-    background-color: #c3c3c3;
+    z-index: 1000;
+    background-color: #ffffff;
 }
+
 
 .logo {
     position: relative;
-    z-index: 10;
-    margin-left: 5rem;
-    background-color: white;
+    width: 100%;
+    height: 150px;  
+    top: 50px;
+    left: 50px;
+    z-index: 20;
+    background-color: white; /* Eliminamos el fondo si no es necesario */
+    padding: 0; /* Eliminamos el padding para evitar distorsiones */
+    width: auto; /* Dejamos que el tamaño del logo se ajuste automáticamente */
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: space-between;
 }
 
-.logo img {
-    width: 120px;
+.imagenLogo {
+    width: 1000px;
+    height: 800px;
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;  
 }
 
 #abrir-menu {
@@ -44,10 +59,12 @@ header {
     color: #000000;
     border: 0;
     font-size: 2rem;
+    z-index: 30;
 }
 
 #cerrar-menu {
     color: #c3c3c3;
+    z-index: 30;
 }
 
 .nav {
@@ -63,21 +80,24 @@ header {
     background-color: #000000;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    
+    z-index: 30;
 }
 
 .nav.visible{
     opacity: 1;
     visibility: visible;
+    z-index: 30;
 }
 
 .nav-list {
     flex-direction: column;
     align-items: end;
+    z-index: 30;
 }
 
 .nav-list li a {
     color: #ecececec;
+    z-index: 30;
 }
 
 /* Slider */
@@ -86,6 +106,7 @@ header {
     width: 100%;
     height: 80vh;
     overflow: hidden;
+    z-index: 5;
 }
 
 .slide {
@@ -115,22 +136,61 @@ header {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     z-index: 5;
 }
-/*MAIN*/
+            /*MAIN*/
 
-.ODS-image{
-    display: flex;
-    justify-content: space-between; /* Espaciado igual entre las imágenes */
+            /*ODS*/
+.container-ODS{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
     align-items: center; /* Alinear verticalmente al centro */
-    gap: 5px; /* Espacio entre imágenes */
-    margin: 20px 0; /* Márgenes opcionales para la sección */
+    gap: 10px; /* Espacio entre imágenes */
+    margin: 20px auto; /* Márgenes opcionales para la sección */
 }
-.ODS-image img {
-    width: 300px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    height: auto; /* Mantén la proporción de la imagen */
-    border-radius: 5px; /* Opcional: redondear los bordes de las imágenes */
+.container-destacado img {
+    width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 50px; /* Mantén la proporción de la imagen */
+    border-radius: 10px; /* Opcional: redondear los bordes de las imágenes */
     object-fit: cover; /* Asegura que las imágenes mantengan su relación de aspecto */
+    display: block;
 }
 
+/*DESTACADOS*/
+.container-destacado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 10px; /* Espacio entre las columnas */
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.destacado {
+    position: relative;
+    overflow: hidden;
+    height: 430px; /* Ajuste de la altura para un diseño más uniforme */
+}
+
+.destacado img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.text-destacado {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px; /* Para asegurar que el texto no se salga */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /*Formulario*/
 /* Estilos generales del formulario */
 .subscription-form {
@@ -185,6 +245,10 @@ header {
     background-color: #218838;
 }
 
+.describe {
+    text-align: left;
+    cursor: pointer;
+}
 
 /* Estilos de la sección de redes sociales */
 .social-media {
