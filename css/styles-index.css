@@ -1,6 +1,7 @@
 div{
     border: 1px solid rgb(2, 204, 255);
 }
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -8,7 +9,9 @@ div{
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
     font-family: sans-serif;
     line-height: 1.6;
     color: #333;
@@ -18,9 +21,9 @@ body {
 header {
     position: fixed; 
     width: 100%;
-    height: 75px; /* Ajustamos la altura del header */
+    height: 10vh; /* Altura del header ajustada a la altura del viewport */
     display: flex;
-    padding: 20px;
+    padding: 2rem;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
@@ -30,26 +33,23 @@ header {
 
 .logo {
     position: relative;
-    width: 200px;
-    height: 50px;  
-    top: 50px;
-    left: 50px;
-    z-index: 20;
-    background-color: white; /* Eliminamos el fondo si no es necesario */
-    padding: 0; /* Eliminamos el padding para evitar distorsiones */
-    width: auto; /* Dejamos que el tamaño del logo se ajuste automáticamente */
+    width: auto; /* Auto-ajustable */
+    height: auto;
+    top: 5vh; /* Ajustado en unidades relativas */
+    left: 5vw;
+    z-index: 200;
+    background-color: #ccc;
     display: flex;
-    align-items: center; /* Centra la imagen verticalmente */
+    align-items: center;
     justify-content: space-between;
 }
 
 .imagenLogo {
-    width: 1000px;
-    height: 800px;
+    width: 100vw; /* Relativo al ancho del viewport */
+    height: auto;
     object-fit: contain;
-    object-position: center;
-    max-width: 100%;
-    max-height: 100%;  
+    padding: 2rem;
+    max-width: 25%;
 }
 
 #abrir-menu {
@@ -72,10 +72,10 @@ header {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 1rem;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     background-color: #000000;
     padding: 2rem;
@@ -83,7 +83,7 @@ header {
     z-index: 30;
 }
 
-.nav.visible{
+.nav.visible {
     opacity: 1;
     visibility: visible;
     z-index: 30;
@@ -91,7 +91,7 @@ header {
 
 .nav-list {
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     z-index: 30;
 }
 
@@ -136,37 +136,105 @@ header {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     z-index: 5;
 }
+
 /*MAIN*/
 
 /*ODS*/
-.container-ODS{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
-    align-items: center; /* Alinear verticalmente al centro */
-    gap: 10px; /* Espacio entre imágenes */
-    margin: 20px auto; /* Márgenes opcionales para la sección */
+.ODS {
+    justify-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
 }
-.container-destacado img {
-    width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    height: 50px; /* Mantén la proporción de la imagen */
-    border-radius: 10px; /* Opcional: redondear los bordes de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes mantengan su relación de aspecto */
+.container-ODS {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+    height: auto; /* Asegura una altura suficiente */
+    width: auto;
+    align-items: center;
+}
+
+.container-ODS img {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    min-height: 15rem; /* Ajusta la altura mínima de los elementos */
+    width: 100%; /* Asegura que ocupen el ancho del contenedor */ 
+    transition: transform 0.5s ease;
+
+}
+
+.ODS-link {
+    position: relative;
     display: block;
+    text-align: center;
+}
+
+.ODS-link img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ODS-link:hover img {
+    opacity: 0;
+}
+
+.ODS-link:hover .hover-text {
+    display: grid;
+    text-decoration:underline;
+    justify-content: center;
+}
+
+/* Diferentes colores para cada imagen */
+.ods-6:hover .hover-text {
+    background-color: rgb(39, 189, 226); /* Azul */
+}
+
+.ods-7:hover .hover-text {
+    background-color: rgb(252, 195, 18);
+}
+
+.ods-13:hover .hover-text {
+    background-color: rgb(72, 119, 60);
+}
+
+.ods-15:hover .hover-text {
+    background-color: rgb(64, 174, 73);
 }
 
 /*DESTACADOS*/
 .container-destacado {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
-    gap: 10px; /* Espacio entre las columnas */
-    max-width: 1200px;
-    margin: 20px auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    max-width: 90vw;
+    margin: 2rem auto;
 }
 
 .destacado {
     position: relative;
     overflow: hidden;
-    height: 430px; /* Ajuste de la altura para un diseño más uniforme */
+    height: 60vh;
 }
 
 .destacado img {
@@ -178,35 +246,39 @@ header {
 
 .text-destacado {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px; /* Para asegurar que el texto no se salga */
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    padding: 0.5rem;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.destacado:hover img {
+    transform: scale(1.1);
+}
+
 /*Formulario*/
-/* Estilos generales del formulario */
 .subscription-form {
-    width: 100%;
-    max-width: 400px;
+    width: 90vw;
+    max-width: 25rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .subscription-form h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
@@ -217,26 +289,26 @@ header {
 
 .subscription-form label {
     text-align: left;
-    margin-bottom: 5px;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
     color: #333;
 }
 
 .subscription-form input {
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .subscription-form button {
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
     color: white;
     background-color: #28a745;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -250,10 +322,10 @@ header {
     cursor: pointer;
 }
 
-/* Estilos de la sección de redes sociales */
+/* Redes sociales */
 .social-media {
     text-align: center;
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 .social-icons {
@@ -265,70 +337,46 @@ header {
     display: inline-block;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; /* Para quitar subrayado de los enlaces */
-    color: inherit; /* Mantiene el color original */
-    margin: 10px; /* Espacio entre los íconos */
-    font-size: 14px; /* Tamaño del texto debajo del ícono */
+    text-decoration: none;
+    color: inherit;
+    margin: 1rem;
+    font-size: 0.875rem;
 }
 
 .social-icons i {
-    font-size: 24px; /* Ajusta el tamaño del ícono */
-    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
-    display: block; /* Asegura que el ícono esté separado del texto */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
-.logo {
-    margin-top: 10px;
-}
-
-.logo img {
-    width: 100px; /* Ajusta el tamaño del logo */
-    height: auto;
-}
-
-
-/* Estilos del footer */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 2rem 0;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
-.locations,
-.nav-links {
-    width: 45%; /* Ancho para las dos secciones */
+.locations, .nav-links {
+    width: 90vw;
+    text-align: center;
 }
 
-.locations h2,
-.nav-links h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #f2f2f2; /* Color más claro para los títulos */
-}
-
-.location {
-    margin-bottom: 15px;
-}
-
-.location h3 {
-    font-size: 18px;
-    margin: 0;
-}
-
-.location p {
-    margin: 5px 0;
+.locations h2, .nav-links h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #f2f2f2;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #444; /* Línea superior */
-    padding-top: 10px;
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
 }
-
