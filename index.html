@@ -32,7 +32,7 @@
     <div class="slider">
         <div class="slide active">
             <img src="/images/home/Slider2.jpg" alt="Imagen 1">
-            <div class="text-overlay">
+            <div id ="overlay-container" class="text-overlay">
                 <h2>Conservando el agua</h2>
                 <p>Preservando la vida</p>
             </div>
@@ -44,76 +44,106 @@
         <div class="ODS">
             <section>
                 <h2>Nuestro compromiso con los ODS</h2>
-                <p>En Fundación HidroViva trabajamos por un futuro sostenible alineado con los Objetivos de Desarrollo Sostenible (ODS):</p>
+                <p>La <strong>Fundación HidroViva</strong>  se compromete a contribuir activamente a los Objetivos de Desarrollo Sostenible, impulsando un impacto positivo en nuestra comunidad y medio ambiente. Nuestro trabajo se enfoca en los siguientes ODS:</p>
                 <div class="container-ODS">
                     <a href="https://www.un.org/sustainabledevelopment/es/water-and-sanitation/" class="ODS-link ods-6">
                         <img src="/images/home/ODS06.jpg" alt="ODS 6">
-                        <span class="hover-text">Leer más sobre el objetivo 6</span>
+                        <span class="hover-text">
+                            <span class="text-gestion-sostenible">Promovemos la gestión sostenible del agua para asegurar este recurso vital para todos.</span>
+                            <span class="text-objetivo">Leer más sobre el objetivo 6</span>
+                        </span>
                     </a>
                     <a href="https://www.un.org/sustainabledevelopment/es/energy/" class="ODS-link ods-7">
                         <img src="/images/home/ODS7.jpg" alt="ODS 7">
-                        <span class="hover-text">Leer más sobre el objetivo 7</span>
+                        <span class="hover-text">
+                            <span class="text-gestion-sostenible">Incorporamos energías renovables en nuestros proyectos para reducir el impacto ambiental.</span>
+                            <span class="text-objetivo">Leer más sobre el objetivo 7</span>
+                        </span>
                     </a>
                     <a href="https://www.un.org/sustainabledevelopment/es/climate-change-2/" class="ODS-link ods-13">
                         <img src="/images/home/ODS13.jpg" alt="ODS 13">
-                        <span class="hover-text">Leer más sobre el objetivo 13</span>
+                        <span class="hover-text">
+                            <span class="text-gestion-sostenible">Nos unimos a la lucha contra el cambio climático a través de la protección de los ecosistemas hídricos.</span>
+                            <span class="text-objetivo">Leer más sobre el objetivo 13</span>
+                        </span>
                     </a>
                     <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" class="ODS-link ods-15">
                         <img src="/images/home/ODS15.jpg" alt="ODS 15">
-                        <span class="hover-text">Leer más sobre el objetivo 15</span>
+                        <span class="hover-text">
+                            <span class="text-gestion-sostenible">Defendemos y restauramos los ecosistemas de agua dulce, esenciales para la biodiversidad y la vida.</span>
+                            <span class="text-objetivo">Leer más sobre el objetivo 15</span>
+                        </span>
                     </a>
                 </div>
-                <p>Promovemos la conservación, la investigación y la educación para proteger el patrimonio hídrico de Antioquia.</p>
             </div>
             </section>
         <div>
             <section>
                 <h2>Destacados</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aperiam consectetur sunt odio laudantium saepe inventore, nobis blanditiis nihil ipsum nemo dolores adipisci, voluptatem illum maxime minus fugit corrupti? Beatae.</p>
+                <p>Explora nuestros proyectos clave en biodiversidad acuática, campañas de adopción, energías limpias y ciencia ciudadana, todos diseñados para proteger y preservar el agua en Antioquia.</p>
                 <div class="container-destacado">
-                    <div class="destacado">
-                        <img src="/images/home/Destacado3.webp" alt="Proyectos">
-                        <div class="text-destacado">PROYECTOS</div>
-                    </div>
-                    <div class="destacado">
-                        <img src="/images/home/Destacado2.png" alt="Proyectos">
-                        <div class="text-destacado">BIODIVERSIDAD</div>
-                    </div>
-                    <div class="destacado">
-                        <img src="/images/home/Destacado3.webp" alt="Proyectos">
-                        <div class="text-destacado">ADOPTA UNA RÍO</div>
-                    </div>
-                    <div class="destacado">
-                        <img src="/images/home/Destacado3.webp" alt="Proyectos">
-                        <div class="text-destacado">DONA POR EL AGUA</div>
-                    </div>
+                    <a href="pages/Proyectos.html">
+                        <div class="destacado">
+                            <img src="/images/home/Destacado1.png" alt="Proyectos">
+                            <div class="text-destacado">PROYECTOS</div>
+                        </div>
+                    </a>
+                    <a href="pages/Biodiversidad.html">
+                        <div class="destacado">
+                            <img src="/images/home/Destacado2.png" alt="Biodiversidad">
+                            <div class="text-destacado">BIODIVERSIDAD</div>
+                        </div>
+                    </a>
+                    <a href="pages/campañas.html">
+                        <div class="destacado">
+                            <img src="/images/home/Destacado3.webp" alt="Campañas">
+                            <div class="text-destacado">ADOPTA UNA RÍO</div>
+                        </div>
+                    </a>   
+                    <a href="pages/donar.html">
+                        <div class="destacado">
+                            <img src="/images/home/Destacado1-1.png" alt="Donar">
+                            <div class="text-destacado">DONA POR EL AGUA</div>
+                        </div>
+                    </a>
                 </div>
                 <p>Promovemos la conservación, la investigación y la educación para proteger el patrimonio hídrico de Antioquia.</p>
             </section>
         </div>
-        <section class="subscription-form">
-            <h2>Suscríbete a nuestro boletín</h2>
-            <form id="subscribe-form" action="#" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-        
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        <section >
+            <h2>—————— Suscríbete a nuestro boletín  ――――――</h2>
+            <p>Mantente informado sobre nuestras actividades, proyectos y eventos. Al suscribirte al boletín de la <strong> Fundación HidroViva</strong>, serás parte de una comunidad que impulsa la protección de los recursos hídricos en Antioquia. <br><br><strong>¡Únete a nosotros y sé parte del cambio!</strong></p>
+            <div class="subscription-form">
+                <form id="subscribe-form" action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo" required>
 
-                <label for="email">¿Qué te describe mejor?</label>
-                <input type="radio" class="describe" value="1">Soy estudiante
-                <input type="radio" class="describe" value="1">Me interesa conservar el medio ambiente
-                <input type="radio" class="describe" value="1">Me interesa la política ambiental
-                <input type="radio" class="describe" value="1">Me interesa donar
-                <input type="radio" class="describe" value="1">Estoy explorando
-                <br>
-                <input type="checkbox" class="acepto-terminos-condiciones" value="1">Acepto recibir otras comunicaciones de FUNDACIÓN HIDROVIVA y la Política de privacidad para que FUNDACIÓN HIDROVIDA te proporcione el contenido solicitado.
-        
-                <button type="submit">Suscribirse</button>
-            </form>
+                    <label for="phone">Número de teléfono:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Tu número de teléfono" required>
+
+                    <label class="question">¿Qué te describe mejor?</label>
+                    <div class="opciones">
+                        <input type="radio" name="acepto" value="1">Soy estudiante <br>
+                        <input type="radio" name="acepto" value="1">Soy profesional <br>
+                        <input type="radio" name="acepto" value="2">Me interesa conservar los ecosistemas acuáticos <br>
+                        <input type="radio" name="acepto" value="3">Me interesa la política ambiental <br>
+                        <input type="radio" name="acepto" value="4">Me interesa donar a través de una alianza corporativa <br>
+                        <input type="radio" name="acepto" value="5">Estoy explorando <br>
+                        <input type="radio" name="acepto" value="5"> Quiero donar
+                        <br>
+                    </div>
+                    <div class="aceptacion">
+                        <input type="checkbox" class="aceptacion" value="1">Acepto recibir otras comunicaciones de la FUNDACIÓN HIDROVIVA y la Política de privacidad para que la FUNDACIÓN HIDROVIDA te proporcione el contenido solicitado.
+                    </div>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
         </section>
         <section class="social-media">
-            <h2>ENCUÉNTRANOS</h2>
+            <h2>Encuéntranos</h2>
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
@@ -148,8 +178,9 @@
                     <p>Email: contacto@hidroviva.org</p>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1145.6707474523243!2d-75.58738294640249!3d6.2002767508950996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46827085310471%3A0xbe163fe2c4122392!2sUrbanizacion%20Aldea%20de%20Guayabal!5e0!3m2!1ses!2sco!4v1729651428068!5m2!1ses!2sco" width="400rem"
-                height="200rem"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1145.6707474523243!2d-75.58738294640249!3d6.2002767508950996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46827085310471%3A0xbe163fe2c4122392!2sUrbanizacion%20Aldea%20de%20Guayabal!5e0!3m2!1ses!2sco!4v1729651428068!5m2!1ses!2sco" 
+                width="400rem"
+                height="215rem"
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
