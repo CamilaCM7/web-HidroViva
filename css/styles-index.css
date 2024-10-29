@@ -177,6 +177,27 @@ p {
     font-size: 2rem;
 }
 
+.slide .text-overlay .slide_donar {
+    background-color: #187096;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.slide .text-overlay .slide_donar:hover {
+    background-color: #8eaa46; /* Color de fondo al pasar el mouse */
+}
+
+/* Opcional: estilos adicionales para cuando el botón se presiona */
+.slide .text-overlay .slide_donar:active {
+    background-color: #3e8e41; /* Color al hacer clic */
+}
 /*MAIN*/
 
 /*ODS*/
@@ -482,6 +503,15 @@ footer {
 }
 .nav-links a:hover{
     color: #187096;
+}
+
+.logo-aliados{
+    display: flex;
+    width: 90%;
+    height: 6rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-items: center;
 }
 .footer-bottom {
     width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
