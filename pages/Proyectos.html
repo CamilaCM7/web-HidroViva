@@ -6,28 +6,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
   <title>Corporación Guampán</title>
   <link rel="stylesheet" href="../css/proyectos.css">
 </head>
 
 <body>
 
-  <div class="grid-container">
-    
-    <!-- Header con imagen del municipio de San Jerónimo -->
-    <header>
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Qué Hacemos</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Documentos</a>
-        <a href="#">Nuestras Fuentes Hídricas</a>
-      </nav>
-      <div class="header-title">
-        <h1>Corporación Guampán</h1>
-      </div>
+  <header class="header">
+        <div class="logo">
+            <img src="/images/home/logo_FINAL-03.webp" alt="Logo Fundación HidroViva" class="imagenLogo">
+        </div>
+        <div>
+            <button id="abrir-menu"><i class="bi bi-list"></i></button>
+        </div>
+        <nav class="nav" id="nav">
+            <button id="cerrar-menu"><i class="bi bi-x-square"></i></button>
+            <ul class="nav-list">
+                <li><a href="/pages/quienesSomos.html" class="nav-l">¿Quienes somos?</a></li>
+                <li><a href="/pages/Proyectos.html" class="nav-l">Proyectos</a></li>
+                <li><a href="/pages/Biodiversidad.html" class="nav-l">Biodiversidad</a></li>
+                <li><a href="/pages/campañas.html" class="nav-l">Campañas</a></li>
+                <li><a href="/pages/donar.html" class="nav-l">Donación</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <div class="slider">
+        <div class="slide active">
+            <img src="/images/home/Slider2.webp" alt="Imagen 1">
+            <div id ="overlay-container" class="text-overlay">
+                <h1>CORPORACIÓN GUAMPÁN</h1>
+            </div>
+        </div>
+    </div>
+    
     <!-- Sección principal con título Río Aurra y las imágenes -->
     <main>
       <div class="main-title">Río Aurra</div>
@@ -59,46 +72,43 @@
 
     <!-- Footer con patrocinadores y enlaces -->
     <footer>
-      <div class="redes-sociales">
-        <h3>Redes Sociales</h3>
-        <div class="redes">
-          <div><img src="../images/proyectos-img/Facebook5.png" alt="Facebook"> Facebook</div>
-          <div><img src="../images/proyectos-img/Instagram.png" alt="Instagram"> Instagram</div>
-          <div><img src="../images/proyectos-img/whatsapp.png" alt="WhatsApp"> WhatsApp</div>
-          <div><img src="../images/proyectos-img/Twiter.png" alt="X"> X</div>
-        </div>
+      <div class="footer-content">
+          <div class="locations">
+              <h2>Sede de la Fundación</h2>
+                  <p>Cra 51 # 9ASUR-01, Guayabal, Medellín, Antioquia</p>
+                  <p>Teléfono: (123) 456-7890</p>
+                  <p>Email: contacto@hidroviva.org</p>
+          </div>
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1145.6707474523243!2d-75.58738294640249!3d6.2002767508950996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46827085310471%3A0xbe163fe2c4122392!2sUrbanizacion%20Aldea%20de%20Guayabal!5e0!3m2!1ses!2sco!4v1729651428068!5m2!1ses!2sco" 
+              width="400rem"
+              height="215rem"
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          </div>
+          <div class="nav-links">
+              <h2>Enlaces Principales</h2>
+              <ul>
+                  <li><a href="/pages/quienesSomos.html">¿Quienes somos?</a></li>
+                  <li><a href="/pages/Proyectos.html">Proyectos</a></li>
+                  <li><a href="/pages/Biodiversidad.html">Biodiversidad</a></li>
+                  <li><a href="/pages/campañas.html">Campañas</a></li>
+                  <li><a href="/pages/donar.html">Donación</a></li>
+              </ul>
+          </div>
       </div>
-    
-      <div class="contacto">
-        <h3>Contáctenos</h3>
-        <ul>
-          <li>mesaambiental.sanjeronimo2@gmail.com</li>
-          <li>Donar</li>
-          <li>Aportar información</li>
-          <li>Inscribirse a la Corporación</li>
-        </ul>
+      <div class="logo-aliados">
+          <img src="/images/home/logo_talentotech.webp" alt="logo" >
+          <img src="/images/home/TTCH_logos_footer.webp" alt="logo" >
       </div>
-    
-      <div class="videos-podcast">
-        <h3>Recomendados</h3>
-        <div class="videos">
-          <div><img src="../images/proyectos-img/Netflix.png" alt="Netflix"> Netflix</div>
-          <div><img src="../images/proyectos-img/Youtube2.png" alt="YouTube"> YouTube</div>
-          <div><img src="../images/proyectos-img/Amazon1.png" alt="Amazon"> Amazon</div>
-          <div><img src="../images/proyectos-img/Amazon1.png" alt="Spotify"> Spotify</div>
-        </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Fundación HidroViva. Todos los derechos reservados.</p>
       </div>
-    
-      <div class="patrocinadores">
-        <div><img src="../images/proyectos-img/MunicipioSanJerónimo2.png" alt="San Jerónimo"> San Jerónimo</div>
-        <div><img src="../images/proyectos-img/Escudo de corantioquia.jfif" alt="Conciudadania"> Corantioquia</div>
-        <div><img src="../images/proyectos-img/Escudo de corantioquia.jfif" alt="Brot für die Welt">Conciudadanía</div>
-        <div><img src="../images/proyectos-img/Logo_241003.jpg" alt="DKA Austria">Hidroviva</div>
-      </div>
-    </footer>
-    
+  </footer>
 
-  </div>
-
+  <script src="/js/proyectos.js"></script>
 </body>
 </html>
