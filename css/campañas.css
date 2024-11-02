@@ -198,8 +198,19 @@ p{
     width: 50%;
     padding: 10px;          /* Espaciado interno */
     background-color: #fffdef; /* Color de fondo */
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.frase h2 {
     text-align: center;
+    font-size: 50px;
+
+}
+
+.frase p {
+    text-align: center;
+    font-size: 30px;
+
 }
 
 .imagen{
@@ -207,10 +218,11 @@ p{
     width: 50%;
     margin-top: 30px;
     margin-right: 60px;
-    background-image: linear-gradient(to right, rgba(170, 170, 170, 0.5), rgba(170, 170, 170, 0)), url(../images/voluntariado.jpg);
+    background-image: linear-gradient(to right, rgba(170, 170, 170, 0.5), rgba(170, 170, 170, 0)), url(../images/campañas/voluntariado.jpg);
     background-position: center;
     background-size: cover;  
 }
+
 .cartero{
     display: flex;
     flex-flow: row wrap;
@@ -227,7 +239,7 @@ p{
     width: 45%;
     border-radius: 40px; 
 
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/c_montañas.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_montañas.jpg'); /* Imagen de fondo */
     background-position: center;
     background-size: cover;
 
@@ -240,7 +252,7 @@ p{
 
 #montaña:hover{
     transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/c_montañas.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_montañas.jpg'); /* Imagen de fondo */
 
 }
 .oculto{
@@ -266,7 +278,7 @@ p{
     width: 45%;
     border-radius: 40px; 
 
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/c_plantar.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_plantar.jpg'); /* Imagen de fondo */
     background-position: center;
     background-size: cover;
 
@@ -280,7 +292,7 @@ p{
 
 #arboles:hover{
     transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/c_plantar.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_plantar.jpg'); /* Imagen de fondo */
 
 }
 
@@ -290,7 +302,7 @@ p{
     width: 45%;
     border-radius: 40px; 
 
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/c_con.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_con.jpg'); /* Imagen de fondo */
     background-position: center;
     background-size: cover;
 
@@ -303,7 +315,7 @@ p{
 
 #con:hover{
     transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/c_con.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_con.jpg'); /* Imagen de fondo */
 
 }
 
@@ -312,7 +324,7 @@ p{
     width: 45%;
     border-radius: 40px; 
 
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/c_rios.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_rios.jpg'); /* Imagen de fondo */
     background-position: center;
     background-size: cover;
 
@@ -325,7 +337,7 @@ p{
 
 #rio:hover{
     transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/c_rios.jpg'); /* Imagen de fondo */
+    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_rios.jpg'); /* Imagen de fondo */
 
 }
 
