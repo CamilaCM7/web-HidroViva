@@ -103,6 +103,7 @@ p {
     margin-right: 8rem;
     margin-top: 0.5rem;
     border-radius: 1rem;
+    width: 17rem;
 }
 
 .nav-list {
@@ -110,6 +111,7 @@ p {
     align-items: flex-end;
     z-index: 30;
     list-style: none;
+    margin-right: 0.7rem;
 }
 
 .nav-list li a {
@@ -132,6 +134,7 @@ p {
     color: #187096; /* Color del texto al hacer hover */
     border-radius: 1rem;
     font-weight:600;
+    width: 13.5rem;
 
 }
 /* Slider */
@@ -266,6 +269,27 @@ p {
     color: #000000;
     padding: 10px;
     border-radius: 5px;
+}
+
+
+/*TABLA*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+select {
+    width: 90%;
+    margin-bottom: 10px;
+}
+.filters {
+    margin-bottom: 20px;
 }
 
 /*AMENAZAS*/
