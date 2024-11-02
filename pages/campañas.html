@@ -4,45 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campañas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/campañas.css">
     <link rel="icon" href="../images/logo_ico.ico">
 </head>
 <body>
 
-    <header class="otro">
-        <h1 >Header general</h1>
+    <header class="header">
+        <div class="logo">
+            <img src="/images/home/logo_FINAL-03.webp" alt="Logo Fundación HidroViva" class="imagenLogo">
+        </div>
+        <div>
+            <button id="abrir-menu"><i class="bi bi-list"></i></button>
+        </div>
+        <nav class="nav" id="nav">
+            <button id="cerrar-menu"><i class="bi bi-x-square"></i></button>
+            <ul class="nav-list">
+                <li><a href="/pages/quienesSomos.html" class="nav-l">¿Quienes somos?</a></li>
+                <li><a href="/pages/Proyectos.html" class="nav-l">Proyectos</a></li>
+                <li><a href="/pages/Biodiversidad.html" class="nav-l">Biodiversidad</a></li>
+                <li><a href="/pages/campañas.html" class="nav-l">Campañas</a></li>
+                <li><a href="/pages/donar.html" class="nav-l">Donación</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="contenedor">
-        <div class="frase">
-            <h1 ip="titulo">Campaña y voluntariado</h1>
-            <p ip="frace_inspiradora">"Cada pequeño esfuerzo cuenta: al hacer voluntariado por el medio ambiente, transformas tu pasión en acción y dejas una huella positiva en nuestro planeta para las futuras generaciones."</p>
-        </div>
-        <div class="imagen"></div>
-    </div>
-
-    <div class="cartero">
-        <div id="montaña">
-            <p class="oculto">Voluntariado de Limpieza en las Montañas <br><br> Únete a nosotros en un día de acción y conservación mientras limpiamos nuestras hermosas montañas. Este voluntariado está diseñado para todos los amantes de la naturaleza que deseen hacer una diferencia. Juntos, recogeremos basura, restauraremos la belleza del paisaje y aprenderemos sobre la importancia de cuidar nuestro entorno. No solo disfrutarás de un día al aire libre, sino que también contribuirás a la protección de la fauna y flora locales. ¡Te esperamos para dejar huella en la montaña! </p>
-        </div>
-        <div id="arboles">
-            <p class="oculto">Voluntariado de plata tu arbol <br><br> ¡Únete al voluntariado plantando árboles y marca la diferencia! Cada árbol que plantes ayuda a combatir el cambio climático, mejora la calidad del aire y protege la biodiversidad, además de fortalecer la comunidad. Participar en esta acción no solo contribuye a un futuro más verde, sino que también te conecta con personas que comparten tu pasión por el medio ambiente. ¡Tu esfuerzo cuenta y juntos podemos crear un impacto duradero!</p>
-        </div>
-        <div id="con">
-            <p class="oculto">Sé la Voz del Cambio: Únete al Voluntariado de Concientización <br><br> ¡Conviértete en agente de cambio a través del voluntariado de concientización! Tu voz y acción son fundamentales para educar y sensibilizar a otros sobre temas importantes, como el medio ambiente, la salud y la igualdad. Al involucrarte, no solo amplías tu conocimiento, sino que también inspiras a quienes te rodean a tomar acción. Este tipo de voluntariado fortalece la comunidad, fomenta el diálogo y genera un impacto positivo. ¡Únete y ayuda a crear un futuro más informado y comprometido!</p>
-        </div>
-        <div id="rio">
-            <p class="oculto">Limpia Ríos, Crea Futuro: Únete al Voluntariado <br><br>¡Únete al voluntariado de limpieza de ríos y ayuda a restaurar nuestros ecosistemas! Cada acción cuenta: al limpiar ríos, proteges la vida acuática, mejoras la calidad del agua y contribuyes a un entorno más saludable para todos. Además, esta actividad fomenta la conciencia ambiental en tu comunidad y te conecta con personas apasionadas por el cuidado del planeta. Con tu esfuerzo, podemos preservar estos vitales recursos naturales para las futuras generaciones. ¡Haz la diferencia y sé parte del cambio!</p>
+    <div class="slider">
+        <div class="slide active">
+            <img src="/images/home/Slider2.webp" alt="Imagen 1">
+            <div id ="overlay-container" class="text-overlay">
+                <h>CAMPAÑAS</h>
+            </div>
         </div>
     </div>
 
-    <div class="datos">
-        <h1>Datos personales</h1>
-    </div>
+    <main>
+        <div class="contenedor">
+            <div class="frase">
+                <h2 ip="titulo">Campaña y voluntariado</h2>
+                <p ip="frace_inspiradora">"Cada pequeño esfuerzo cuenta: al hacer voluntariado por el medio ambiente, transformas tu pasión en acción y dejas una huella positiva en nuestro planeta para las futuras generaciones."</p>
+            </div>
+            <div class="imagen"></div>
+        </div>
+    
+        <div class="cartero">
+            <div id="montaña">
+                <p class="oculto">Voluntariado de Limpieza en las Montañas <br><br> Únete a nosotros en un día de acción y conservación mientras limpiamos nuestras hermosas montañas. Este voluntariado está diseñado para todos los amantes de la naturaleza que deseen hacer una diferencia. Juntos, recogeremos basura, restauraremos la belleza del paisaje y aprenderemos sobre la importancia de cuidar nuestro entorno. No solo disfrutarás de un día al aire libre, sino que también contribuirás a la protección de la fauna y flora locales. ¡Te esperamos para dejar huella en la montaña! </p>
+            </div>
+            <div id="arboles">
+                <p class="oculto">Voluntariado de plata tu arbol <br><br> ¡Únete al voluntariado plantando árboles y marca la diferencia! Cada árbol que plantes ayuda a combatir el cambio climático, mejora la calidad del aire y protege la biodiversidad, además de fortalecer la comunidad. Participar en esta acción no solo contribuye a un futuro más verde, sino que también te conecta con personas que comparten tu pasión por el medio ambiente. ¡Tu esfuerzo cuenta y juntos podemos crear un impacto duradero!</p>
+            </div>
+            <div id="con">
+                <p class="oculto">Sé la Voz del Cambio: Únete al Voluntariado de Concientización <br><br> ¡Conviértete en agente de cambio a través del voluntariado de concientización! Tu voz y acción son fundamentales para educar y sensibilizar a otros sobre temas importantes, como el medio ambiente, la salud y la igualdad. Al involucrarte, no solo amplías tu conocimiento, sino que también inspiras a quienes te rodean a tomar acción. Este tipo de voluntariado fortalece la comunidad, fomenta el diálogo y genera un impacto positivo. ¡Únete y ayuda a crear un futuro más informado y comprometido!</p>
+            </div>
+            <div id="rio">
+                <p class="oculto">Limpia Ríos, Crea Futuro: Únete al Voluntariado <br><br>¡Únete al voluntariado de limpieza de ríos y ayuda a restaurar nuestros ecosistemas! Cada acción cuenta: al limpiar ríos, proteges la vida acuática, mejoras la calidad del agua y contribuyes a un entorno más saludable para todos. Además, esta actividad fomenta la conciencia ambiental en tu comunidad y te conecta con personas apasionadas por el cuidado del planeta. Con tu esfuerzo, podemos preservar estos vitales recursos naturales para las futuras generaciones. ¡Haz la diferencia y sé parte del cambio!</p>
+            </div>
+        </div>
+    </main>
 
-    <footer class="otro">
-        <h1 >footer general</h1>
+    <footer>
+        <div class="footer-content">
+            <div class="locations">
+                <h2>Sede de la Fundación</h2>
+                    <p>Cra 51 # 9ASUR-01, Guayabal, Medellín, Antioquia</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Email: contacto@hidroviva.org</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1145.6707474523243!2d-75.58738294640249!3d6.2002767508950996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46827085310471%3A0xbe163fe2c4122392!2sUrbanizacion%20Aldea%20de%20Guayabal!5e0!3m2!1ses!2sco!4v1729651428068!5m2!1ses!2sco" 
+                width="400rem"
+                height="215rem"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+            <div class="nav-links">
+                <h2>Enlaces Principales</h2>
+                <ul>
+                    <li><a href="/pages/quienesSomos.html">¿Quienes somos?</a></li>
+                    <li><a href="/pages/Proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/Biodiversidad.html">Biodiversidad</a></li>
+                    <li><a href="/pages/campañas.html">Campañas</a></li>
+                    <li><a href="/pages/donar.html">Donación</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo-aliados">
+            <img src="/images/home/logo_talentotech.webp" alt="logo" >
+            <img src="/images/home/TTCH_logos_footer.webp" alt="logo" >
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fundación HidroViva. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
+    <script src="/js/campañas.js"></script>
 </body>
 </html>
