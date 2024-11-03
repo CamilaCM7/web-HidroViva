@@ -93,10 +93,11 @@
                 </div>
             </section>
         </div>
-        <div>
+        <div class="tabla-especies-general">
             <section>
                 <h2>Conoce algunas especies de peces de Antioquia</h2>
                 <h3>Colección ictiológica de la Universidasd de Antioquia (CIUA)</h3>
+                <p> Esta tabla ofrece datos de una colección biológica, permitiendo a los usuarios consultar información detallada sobre las especies de peces en Antioquia. Incluye datos sobre localidades y coordenadas de captura, así como información taxonómica, como la familia y el orden de cada especie. Esta herramienta facilita el acceso a información relevante sobre la biodiversidad acuática y su distribución, contribuyendo al conocimiento y conservación de estos ecosistemas.</p>
                 <div class="filters">
                     <label for="especieFilter">Filtrar por Especie:</label>
                     <select id="especieFilter" data-column="Especie" onchange="filterTable()">
@@ -156,13 +157,17 @@
                     <p>Únete a nosotros para proteger nuestros ríos y lagos. Puedes contribuir como voluntario o adoptar una especie acuática en peligro</p>
                 </div>
                 <div class="ayuda-boton">
-                    <button>Contribuye a la conservación</button>
-                    <button>Boton para donar</button>
+                    <a href="./campañas.html">
+                        <button>Contribuye a la conservación</button>
+                    </a>
+                    <a href="./donar.html">
+                        <button>Boton para donar</button>
+                    </a>
                 </div>
             </section>
         </div>
         <section >
-            <h2>—————— Suscríbete a nuestro boletín  ――――――</h2>
+            <h2>Suscríbete a nuestro boletín</h2>
             <p>Mantente informado sobre nuestras actividades, proyectos y eventos. Al suscribirte al boletín de la <strong> Fundación HidroViva</strong>, serás parte de una comunidad que impulsa la protección de los recursos hídricos en Antioquia. <br><br><strong>¡Únete a nosotros y sé parte del cambio!</strong></p>
             <div class="subscription-form">
                 <form id="subscribe-form" action="#" method="post">
