@@ -1,6 +1,6 @@
-div{
+/* div{
     border: 1px solid rgb(255, 2, 2);
-}
+} */
 
 /* Estilos generales */
 * {
@@ -288,7 +288,7 @@ a {
 }
 
 .hover-text button {
-    background-color: #63c1ee;
+    background-color: #187096;
     padding: 8px;
     border: none;
     border-radius: 3px;
@@ -306,6 +306,10 @@ table {
 table, th, td {
     border: 1px solid black;
 }
+
+th {
+    color: #187096;
+}
 th, td {
     padding: 10px;
     text-align: left;
@@ -319,10 +323,16 @@ select {
 .filters {
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.tabla-especies-general h3{
     display: flex;
     justify-content: center;
 }
-
 .tabla-especies {
     display: flex;
     justify-content: center;
@@ -365,6 +375,26 @@ select {
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
     display: block; /* Elimina espacio blanco alrededor de la imagen */
 }
+
+/*Sesión de ayuda*/
+.ayuda-boton {
+    display: flex;
+    justify-content: center;
+}
+
+.ayuda-boton button{
+    display: flex;
+    margin: 1rem;
+    padding: 1.2rem;
+    background-color: #187096;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 
 /*Formulario*/
 .subscription-form {
