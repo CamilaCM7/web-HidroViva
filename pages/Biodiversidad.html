@@ -58,37 +58,36 @@
                 <h2>Especies representativas de los ecosistemas acuáticos de Antioquia</h2>
                 <p>Antioquia alberga una rica variedad de especies acuáticas que incluyen peces como el bocachico y el bagre rayado, junto con invertebrados y plantas acuáticas endémicas. Cada especie cumple un rol específico y es una pieza clave en la conservación del entorno acuático, siendo testimonio de la diversidad y el valor ecológico de la región.</p>
                 <div class="container-ODS">
-                    <a href="https://www.un.org/sustainabledevelopment/es/water-and-sanitation/" class="ODS-link ods-6">
-                        <img src="/images/Biodiversidad/prochi.png" alt="ODS 6">
+                    <a href="https://colombia.inaturalist.org/taxa/451971-Prochilodus-magdalenae">
+                        <img src="/images/Biodiversidad/prochi.png" alt="Bocachico">
                         <span class="hover-text">
                             <span class="text-gestion-sostenible">Prochilodus magdalenae</span><br>
-                            <span class="text-objetivo">Bocachico</span> <br>
-                            <span class="text-objetivo">Leer más sobre esta especie</span>
+                            <span class="text-objetivo1">Bocachico</span> <br>
+                            <button>Leer más.</button>
                         </span>
                     </a>
-                    <a href="https://www.un.org/sustainabledevelopment/es/energy/" class="ODS-link ods-7">
-                        <img src="/images/Biodiversidad/pseudo.png" alt="ODS 7">
+                    <a href="https://colombia.wcs.org/es-es/WCS-visual/Fotos/UNA-MIRADA-AL-BAGRE-RAYADO.aspx">
+                        <img src="/images/Biodiversidad/pseudo.png" alt="Bagre rayado">
                         <span class="hover-text">
                             <span class="text-gestion-sostenible"> Pseudoplatystoma magdaleniatum</span> <br>
-                            <span class="text-objetivo">Bagre rayado</span> <br>
-                            <span class="text-objetivo">Leer más sobre esta especie</span>
+                            <span class="text-objetivo1">Bagre rayado</span> <br>
+                            <button>Leer más.</button>
                         </span>
                     </a>
-                    <a href="https://colombia.inaturalist.org/taxa/48011-Ephemeroptera" class="ODS-link ods-7">
+                    <a href="https://colombia.inaturalist.org/taxa/48011-Ephemeroptera">
                         <img src="/images/Biodiversidad/macroin.png" alt="Macroinvertebrado">
                         <span class="hover-text">
-                            <span class="text-gestion-sostenible">Ephemeroptera</span><br>
-                            <span class="text-objetivo">Efemerópteros</span> <br>
-                            <span class="text-objetivo">Leer más sobre este grupo</span>
+                            <span class="text-objetivo1">Ephemeroptera</span><br>
+                            <span class="text-objetivo1">Efemerópteros</span> <br>
+                            <button>Leer más.</button>
                         </span>
                     </a>
-                    <a href="https://www.corpoboyaca.gov.co/noticias/abc-de-la-especie-invasora-buchon-de-agua-eichhornia-crassipes/" class="ODS-link ods-15">
-                        <img src="/images/Biodiversidad/buchon.png" alt="ODS 15">
+                    <a href="https://www.corpoboyaca.gov.co/noticias/abc-de-la-especie-invasora-buchon-de-agua-eichhornia-crassipes/">
+                        <img src="/images/Biodiversidad/buchon.png" alt="Buchón de agua">
                         <span class="hover-text">
                             <span class="text-gestion-sostenible">Eichhornia crassipens</span> <br>
-                            <span class="text-objetivo">Buchón de agua</span> <br>
-                            
-                            <span class="text-objetivo">Leer más sobre esta especie. !Es invasora!</span>
+                            <span class="text-objetivo1">Buchón de agua</span> <br>
+                            <button>Leer más. ¡Es invasora!</button>
                         </span>
                     </a>
                 </div>
@@ -99,7 +98,7 @@
                 <h2>Conoce algunas especies de peces de Antioquia</h2>
                 <h3>Colección ictiológica de la Universidasd de Antioquia (CIUA)</h3>
                 <div class="filters">
-                    <label for="especieFilter">Filtrar por Especies:</label>
+                    <label for="especieFilter">Filtrar por Especie:</label>
                     <select id="especieFilter" data-column="Especie" onchange="filterTable()">
                         <option value="">Todos</option>
                     </select>
@@ -119,23 +118,24 @@
                         <option value="">Todos</option>
                     </select>
                 </div>
-            
-                <table id="dataTable">
-                    <thead>
-                        <tr>
-                            <th>Especies</th>
-                            <th>Orden</th>
-                            <th>Familia</th>
-                            <th>Municipio</th>
-                            <th>CuerpoAgua</th>
-                            <th>CoordenadaLatitud</th>
-                            <th>CoordenadaLongitud</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Filas dinámicas -->
-                    </tbody>
-                </table>
+                <div class="tabla-especies">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Especies</th>
+                                <th>Orden</th>
+                                <th>Familia</th>
+                                <th>Municipio</th>
+                                <th>CuerpoAgua</th>
+                                <th>CoordenadaLatitud</th>
+                                <th>CoordenadaLongitud</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas dinámicas -->
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
         <div>
