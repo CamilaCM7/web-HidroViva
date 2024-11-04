@@ -1,7 +1,7 @@
 
-/* div{
+div{
     border: 1px solid rgb(255, 2, 2);
-} */
+}
 
 /* Estilos generales */
 * {
@@ -17,6 +17,7 @@ html, body {
     line-height: 1.6;
     color: #333;
 }
+
 
 /*HEADER*/
 header {
@@ -181,168 +182,147 @@ p {
 #overlay-container p {
     font-size: 2rem;
 }
- 
 /* MAIN */
-
-p{
-    font-family: 'Roboto', sans-serif;
-}
-
-
 .contenedor{
     display: flex;
+    width: 100%;
+    margin: 2rem;
 }
 
 .frase{
-    height: 400px;
     width: 50%;
-    padding: 10px;          /* Espaciado interno */
-    background-color: #fffdef; /* Color de fondo */
+    padding: 2rem;          /* Espaciado interno */
     margin-top: 30px;
+}
+
+.imagen{
+    margin-left: 2rem;
+}
+.imagen img{
+    height:350px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
 }
 
 .frase h2 {
     text-align: center;
-    font-size: 50px;
-
 }
 
-.frase p {
+.nuestras-campañas h2 {
+    margin: 0 auto;
     text-align: center;
-    font-size: 30px;
-
-}
-
-.imagen{
-    height: 400px;
-    width: 50%;
-    margin-top: 30px;
-    margin-right: 60px;
-    background-image: linear-gradient(to right, rgba(170, 170, 170, 0.5), rgba(170, 170, 170, 0)), url(../images/campañas/voluntariado.jpg);
-    background-position: center;
-    background-size: cover;  
 }
 
 .cartero{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 1200px;
+    height: 1000px;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20%;
     margin-right: 20%;
 }
-#montaña{
-    height: 45%;
-    width: 45%;
-    border-radius: 40px; 
-
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_montañas.jpg'); /* Imagen de fondo */
-    background-position: center;
-    background-size: cover;
-
-
-    transition: 0.6s;
-    object-fit: cover;
-
-    margin: 0;
-}
-
-#montaña:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_montañas.jpg'); /* Imagen de fondo */
-
-}
-.oculto{
-    height: 95%;
-    width: 95%;
-    padding: 20px 5% 5px 5%;
-
-    text-align: center;
-
-    margin: 0;
-    opacity: 0;
-
-    overflow: hidden;
-}
-.oculto:hover{
-    opacity: 0.7;
-    
-}
-
-
-#arboles{
-    height: 45%;
-    width: 45%;
-    border-radius: 40px; 
-
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_plantar.jpg'); /* Imagen de fondo */
-    background-position: center;
-    background-size: cover;
-
-
-    transition: 0.6s;
-    object-fit: cover;
-
-    margin: 0;
-
-}
-
-#arboles:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_plantar.jpg'); /* Imagen de fondo */
-
-}
-
-#con{
-   
-    height: 45%;
-    width: 45%;
-    border-radius: 40px; 
-
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_con.jpg'); /* Imagen de fondo */
-    background-position: center;
-    background-size: cover;
-
-
-    transition: 0.6s;
-    object-fit: cover;
-
-    margin: 0; 
-}
-
-#con:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_con.jpg'); /* Imagen de fondo */
-
-}
 
 #rio{
     height: 45%;
     width: 45%;
     border-radius: 40px; 
-
-    background-image: linear-gradient(rgba(185, 241, 255, 0), rgba(185, 241, 255, 0)), url('../images/campañas/c_rios.jpg'); /* Imagen de fondo */
+    background-image: url('../images/campañas/c_rios.jpg');
     background-position: center;
     background-size: cover;
-
-
     transition: 0.6s;
     object-fit: cover;
-
     margin: 0;  
 }
 
 #rio:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient(rgba(185, 241, 255, 0.3), rgba(185, 241, 255, 0.3)), url('../images/campañas/c_rios.jpg'); /* Imagen de fondo */
+    transform: scale(1.05);
+    background-image: linear-gradient(#187096, rgba(0, 28, 57, 0.911)), url('../images/campañas/c_rios.jpg'); /* Imagen de fondo */
+    color: white;
+    font-size: 25px;
+    padding-top: 2rem;
+    border: 3px solid #187096;
+}
 
+#innovacion{
+    height: 45%;
+    width: 45%;
+    border-radius: 40px; 
+    background-image: url('../images/campañas/innovacion.jpg'); /* Imagen de fondo */
+    background-position: center;
+    background-size: cover;
+    transition: 0.6s;
+    object-fit: cover;
+    margin: 0;
+}
+
+#innovacion:hover{
+    transform: scale(1.05);
+    background-image: linear-gradient(#03a4ea, rgba(0, 26, 56, 0.877)), url('../images/campañas/innovacion.jpg'); /* Imagen de fondo */
+    color: white;
+    font-size: 25px;
+    padding-top: 1.5rem;
+    padding: auto;
+    border: 3px solid #03a4ea;
+}
+.oculto{
+    height: 95%;
+    width: 95%;
+    padding: 20px 5% 5px 5%;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.oculto:hover{
+    opacity: 1; 
+}
+
+#arboles{
+    height: 45%;
+    width: 45%;
+    border-radius: 40px; 
+    background-image: url('../images/campañas/c_plantar.jpg'); /* Imagen de fondo */
+    background-position: center;
+    background-size: cover;
+    transition: 0.6s;
+    object-fit: cover;
+    margin: 0;
+}
+
+#arboles:hover{
+    transform: scale(1.05);
+    background-image: linear-gradient(#567b25, rgba(1, 72, 21, 0.929)), url('../images/campañas/c_plantar.jpg'); /* Imagen de fondo */
+    color: white;
+    font-size: 25px;
+    padding-top: 3.5rem;
+}
+
+#conciencia{
+    height: 45%;
+    width: 45%;
+    border-radius: 40px; 
+    background-image:  url('../images/campañas/enviromental.jpg'); /* Imagen de fondo */
+    background-position: center;
+    background-size: cover;
+    transition: 0.6s;
+    object-fit: cover;
+    margin: 0; 
+    color: white;
+}
+
+#conciencia:hover{
+    transform: scale(1.05);
+    background-image: linear-gradient(rgb(63, 171, 0), rgba(3, 76, 12, 0.881)), url('../images/campañas/enviromental.jpg'); /* Imagen de fondo */
+    color: white;
+    font-size: 25px;
+    padding-top: 3.5rem;
 }
 
 /* Footer */
-
 footer {
     background-color: #63c1ee; /* Color de fondo opcional */
     color: white; /* Color de texto opcional */
@@ -396,15 +376,6 @@ footer {
 .nav-links a:hover{
     color: #187096;
 }
-
-.logo-aliados{
-    display: flex;
-    width: 90%;
-    height: 6rem;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    justify-items: center;
-}
 .footer-bottom {
     width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
     padding-top: 20px; /* Espacio adicional en la parte superior */
@@ -412,4 +383,3 @@ footer {
     text-align: center; /* Centra el texto en el pie de página */
     font-size: 1.2rem;
 }
-

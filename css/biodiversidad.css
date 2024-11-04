@@ -418,7 +418,7 @@ select {
     text-align: left;
     align-items: flex-start;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: bold;;
     color: #333;
 }
@@ -426,7 +426,7 @@ select {
 .subscription-form input {
     padding: 0.75rem;
     margin-bottom: 1.25rem;
-    font-size: 1rem;
+    font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
     text-align: left;
@@ -439,7 +439,7 @@ select {
     align-items: flex-start;
     margin-top: 10px;
     text-align: left;
-    font-size:0.9rem ;
+    font-size: 20px;
 
 }
 

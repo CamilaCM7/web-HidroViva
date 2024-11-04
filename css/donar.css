@@ -145,9 +145,8 @@ p {
 
 .slide {
     position: absolute;
-    width: 85%;
+    width: 100%;
     height: 100%;
-    margin-left: 10%;
     display: none;
 }
 
@@ -155,13 +154,12 @@ p {
     display: block;
 }
 
-.slide img {
+.slide video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .text-overlay {
-    margin-top: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -172,85 +170,157 @@ p {
     z-index: 5;
 }
 
-#overlay-container h2 {
-    font-size: 3rem;
-}
-#overlay-container p {
+#overlay-container h1 {
     font-size: 2rem;
 }
-
-h1{
-    font-size: 90px;
-    font-family: 'Britannic Bold';
+#overlay-container p {
+    font-size: 1rem;
+    margin-top: 3rem;
 }
-button {
-    font-size: 40px;
+
+#donar{
+    font-size: 20px;
     padding: 10px;
-    background-color: #f3f3f5;
+    background-color: #187096;
     font-family: Georgia;
-    color: #2a067f;
+    color: white;
     cursor: pointer;
     transition: all 0.9s ease; /* trancision al pasar el mouse*/
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
     border-radius: 5px;
-  }
-  
-  button:hover {
-    font-size: 40px;
+}
+
+#donar:hover {
+    font-size: 20px;
     padding: 10px;
-    background-color: #0b1a64;
+    background-color: #8eaa46;
     font-family: Georgia;
     color: #f3f3f3;
-    transform: scale(1.1); /* ligero aumento del tamaño del boton al pasar el mouse */
+    transform: scale(1.05); /* ligero aumento del tamaño del boton al pasar el mouse */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
-  }
-
-  .hidden {
-    display: none;
 }
 
+/* Estilos para el botón de donación */
+#boton-donar {
+    position: relative;
+}
+
+/* Estilos del formulario modal */
 #formu {
-    background: rgba(0, 0, 0, 0.545);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 65rem;
+    background: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-#gracias {
-    background: rgba(0, 0, 0, 0.545);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin-bottom: 80rem;
+    border-radius: 8px;
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
+    color: #187096;
+    margin-top: 1rem;
 }
 
-form {
-    margin-bottom: 50rem;
+#formu h2{
+    font-size: 15px;
+    padding: 0 0 0.5rem 0;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: none;
     display: flex;
-    text-align: center;
     flex-direction: column;
-    gap: 5px;
-
 }
 
-input {
-    padding: 10px;
+#form {
+    width: 30vw;
+    max-width: 20rem;
+    height: 50vh;
+    padding: 2rem;
+    background-color: #63c2eecf;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+}
+#form label {
+    display: inline;
+    text-align: left;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    font-size: 10px;
+    font-weight: bold;;
+    color: black;
+    text-shadow: none;
+}
+
+#form input {
+    display: inline;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%; /* Campos de entrada ocupan todo el ancho */
+    border-radius: 0.25rem;
+    text-align: left;
+    width: 55%;
 }
 
-@media (max-width: 600px) {
-    #donation-panel {
-        right: 10px;
-        bottom: 10px; /* Ajustar en pantallas pequeñas */
-    }
-
-    button {
-        font-size: 14px; /* Ajustar el tamaño de fuente en pantallas pequeñas */
-    }
+#form button{
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: #187096;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#form button:hover {
+    background-color: #8eaa46;
+}
 
+/* Estilos de fondo oscuro para el modal */
+#fondo-oscuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 100vmax rgba(2, 2, 2, 0.4);
+    display: none;
+    z-index: 999;
+}
+
+/* Estilo para el botón de cerrar */
+#cerrar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+}
+
+/* Estilo para el mensaje de agradecimiento */
+#gracias {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #187096;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculto por defecto */
+    z-index: 1001;
+    text-shadow: none;
+}
 
   /* Footer */
 footer {

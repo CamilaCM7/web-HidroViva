@@ -340,8 +340,7 @@ button:hover {
     align-items: flex-start;
     margin-top: 10px;
     text-align: left;
-    font-size:0.9rem ;
-
+    font-size: 1rem;
 }
 
 .opciones input[type="radio"] {
