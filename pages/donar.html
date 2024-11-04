@@ -32,43 +32,41 @@
 
     <div class="slider">
         <div class="slide active">
-            <img src="/images/donar/donar.gif" alt="Imagen 1">
+            <video controls autoplay muted>
+                <source src="/images/donar/6035426_Man_Woman_1920x1080.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
             <div id ="overlay-container" class="text-overlay">
-                <h1><strong>¡Cada gota cuenta! Protege nuestro patrimonio hídrico.</strong></h1>
-                <p><strong>No deberías tener que preocuparte por los estafadores que roban información personal y los datos de tarjetas de crédito, trabajamos para la seguridad de nuestros donantes.</strong>           <br></br>
-
+                <h1><strong>Cada gota importa: preservemos nuestro patrimonio hídrico</strong></h1>
+                <p>Tu seguridad es nuestra prioridad. Trabajamos para proteger la información personal y los datos de nuestros donantes.<br></br><br></br>
                 <div id="boton-donar">
-                    <button id="donar">Dona con confianza</button>
-                    <div id="formu" class="hidden">
-                        <h2>Formulario de Donación</h2>
-                        <form id="form">
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" placeholder="Ingrese su nombre" required>
-            
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" placeholder="ejemplo@correo.com" required>
-            
-                            <label for="amount">Monto de la donación:</label>
-                            <input type="number" id="amount" placeholder="Monto en $USD" required>
-            
-                            <button type="submit">Enviar</button>
-                            <button type="button" id="limpiar-form">Limpiar</button>
-                        </form>
-                        <button id="cerrar">Cerrar</button>
-                    </div>
+                    <button id="donar">Haz tu donación de forma segura</button>
                 </div>
-            
-                <div id="gracias" class="hidden">
-                    <p>¡Gracias por tu donación!</p>
-                    <button id="cerrar-mensaje">Cerrar</button>
-                </div>
-            
+                    <div id="fondo-oscuro"></div>
+                        <!-- Contenido del formulario de donación -->
+                        <div id="formu">
+                            <button id="cerrar">X</button><br><br>
+                            <h2>Formulario de Donación</h2>
+                            <form id="form">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" placeholder="Ingrese su nombre" required><br>
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="ejemplo@correo.com" required><br>
+
+                                <label for="amount">Monto de la donación:</label>
+                                <input type="number" id="amount" placeholder="Monto en $USD" required><br>
+
+                                <button id="enviar" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                        <!-- Mensaje de agradecimiento -->
+                        <div id="gracias">
+                            ¡Gracias por tu donación! Tu apoyo es invaluable.
+                        </div>
             </div>
         </div>
-        <!-- Puedes agregar más imágenes aquí -->
     </div>
-    <br></br>
-
     <footer>
         <div class="footer-content">
             <div class="locations">

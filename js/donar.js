@@ -13,33 +13,33 @@ cerrar.addEventListener("click", () => {
 })
 
 //Boton donar
-document.getElementById('donar').addEventListener('click', function() {
-    const form = document.getElementById('formu');
-    form.classList.toggle('hidden');
+// Mostrar el formulario y el fondo oscuro al hacer clic en el botón
+document.getElementById("donar").addEventListener("click", function() {
+    document.getElementById("formu").style.display = "block";
+    document.getElementById("fondo-oscuro").style.display = "block";
 });
 
-document.getElementById('cerrar').addEventListener('click', function() {
-    document.getElementById('formu').classList.add('hidden');
+// Ocultar el formulario y el fondo oscuro al hacer clic en el botón de cerrar
+document.getElementById("cerrar").addEventListener("click", function() {
+    document.getElementById("formu").style.display = "none";
+    document.getElementById("fondo-oscuro").style.display = "none";
 });
 
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el envío del formulario
-
-    const amount = parseFloat(document.getElementById('amount').value);
-    if (amount <= 0) {
-        alert("Por favor, ingrese un monto válido.");
-        return;
-    }
-
-    document.getElementById('formu').classList.add('hidden');
-    document.getElementById('gracias').classList.remove('hidden');
+// Ocultar el formulario y el fondo oscuro al hacer clic fuera del formulario
+document.getElementById("fondo-oscuro").addEventListener("click", function() {
+    document.getElementById("formu").style.display = "none";
+    document.getElementById("fondo-oscuro").style.display = "none";
 });
 
-document.getElementById('cerrar-mensaje').addEventListener('click', function() {
-    document.getElementById('gracias').classList.add('hidden');
-});
+// Mostrar el mensaje de agradecimiento al enviar el formulario
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir el envío real del formulario
+    document.getElementById("formu").style.display = "none"; // Ocultar el formulario
+    document.getElementById("fondo-oscuro").style.display = "none"; // Ocultar el fondo oscuro
+    document.getElementById("gracias").style.display = "block"; // Mostrar el mensaje de agradecimiento
 
-// Función para limpiar el formulario
-document.getElementById('limpiar-form').addEventListener('click', function() {
-    document.getElementById('form').reset(); // Limpia los campos del formulario
+    // Ocultar el mensaje de agradecimiento después de 3 segundos
+    setTimeout(function() {
+        document.getElementById("gracias").style.display = "none";
+    }, 3000);
 });
